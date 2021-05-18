@@ -10,15 +10,18 @@ namespace GameFramework
     class Game
     {
         private ArrayList objectsArrayList = new ArrayList();
-
         public void addGameObject(GameObject newObj)
         {
             objectsArrayList.Add(newObj);
         }
 
-        public ArrayList returnObjects()
+        public void Update()
         {
-            return objectsArrayList;
+            for (int idx = 0; idx < objectsArrayList.Count; idx++)
+            {
+                GameObject newObj = (GameObject)objectsArrayList[idx];
+                newObj.UpdatePosition();
+            }
         }
     }
 }
