@@ -15,17 +15,28 @@ namespace GameFramework
     {
         private int speed;
         PictureBox gameElement = new PictureBox();
+        IMovement direction;
+
+        public GameObject(PictureBox gameElement, int speed, IMovement direction)
+        {
+            this.speed = speed;
+            this.gameElement = gameElement;
+            this.gameElement.BackColor = Color.Transparent;
+            this.direction = direction;
+        }
 
         public GameObject(PictureBox gameElement, int speed)
         {
             this.speed = speed;
             this.gameElement = gameElement;
-
+            this.gameElement.BackColor = Color.Transparent;
+            this.direction = new MoveLeft();
         }
 
         public void UpdatePosition()
         {
-            this.gameElement.Left -= 5;
+            this.gameElement.Top = this.gameElement.Top + speed * (direction.TopDirection() / 3);
+            this.gameElement.Left = this.gameElement.Left + speed * (direction.LeftDirection() / 3);
         }
     }
 }

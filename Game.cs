@@ -9,6 +9,22 @@ namespace GameFramework
 {
     class Game
     {
+        private static Game gameManager;
+        private Game()
+        {
+
+        }
+
+        //CREATING ONLY ONE INSTANCE FOR WHOLE PROGRAM
+        public static Game getInstance()
+        {
+            if (gameManager == null)
+            {
+                gameManager = new Game();
+            }
+            return gameManager;
+        }
+
         private ArrayList objectsArrayList = new ArrayList();
         public void addGameObject(GameObject newObj)
         {

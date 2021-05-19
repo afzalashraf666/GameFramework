@@ -14,7 +14,7 @@ namespace GameFramework
 {
     public partial class GameWindow : Form
     {
-        Game g = new Game();
+        Game game = Game.getInstance();
         public GameWindow()
         {
             InitializeComponent();
@@ -22,20 +22,20 @@ namespace GameFramework
 
         private void GameWindow_Load(object sender, EventArgs e)
         {
-            GameObject newobj = new GameObject(picBox, 1);
-            GameObject newobj2 = new GameObject(picBox2, 2);
-            GameObject newobj3 = new GameObject(picBox3, 3);
-            GameObject newobj4 = new GameObject(picBox4, 3);
-            g.addGameObject(newobj);
-            g.addGameObject(newobj2);
-            g.addGameObject(newobj3);
-            g.addGameObject(newobj4);
+            picBox4.Hide();
+            GameObject newobj = new GameObject(picBox, 1, new MoveLeft()); //left movement
+            GameObject newobj2 = new GameObject(picBox2, 1, new MoveRight()); //right movement
+            GameObject newobj3 = new GameObject(picBox3, 3); //default left movement,if movement not specified
+            //GameObject newobj4 = new GameObject(picBox4, 3);
+            game.addGameObject(newobj);
+            game.addGameObject(newobj2);
+            game.addGameObject(newobj3);
+            //game.addGameObject(newobj4);
         }
 
         private void mainTimer_Tick(object sender, EventArgs e)
         {
-            //Game class method
-            g.Update();
+            game.Update();
         }
     }
 }

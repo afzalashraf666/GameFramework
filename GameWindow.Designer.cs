@@ -61,7 +61,7 @@ namespace GameFramework
             // 
             this.picBox3.BackColor = System.Drawing.Color.Transparent;
             this.picBox3.Image = global::GameFramework.Properties.Resources.robberrub;
-            this.picBox3.Location = new System.Drawing.Point(353, 282);
+            this.picBox3.Location = new System.Drawing.Point(347, 282);
             this.picBox3.Name = "picBox3";
             this.picBox3.Size = new System.Drawing.Size(150, 150);
             this.picBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -83,7 +83,7 @@ namespace GameFramework
             // 
             this.picBox2.BackColor = System.Drawing.Color.Transparent;
             this.picBox2.Image = global::GameFramework.Properties.Resources.robberrub;
-            this.picBox2.Location = new System.Drawing.Point(492, 282);
+            this.picBox2.Location = new System.Drawing.Point(1, 282);
             this.picBox2.Name = "picBox2";
             this.picBox2.Size = new System.Drawing.Size(150, 150);
             this.picBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

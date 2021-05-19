@@ -3,16 +3,39 @@
   <Class Name="GameFramework.Game">
     <Position X="1.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAAAQAA=</HashCode>
+      <HashCode>AEQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAIAAAAAQAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework.GameObject">
-    <Position X="5" Y="1.25" Width="1.5" />
+    <Position X="3" Y="1.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAACAQAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAICAQAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObject.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="GameFramework.MoveLeft">
+    <Position X="5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAQAAAAIAAAAAAIAAAACAAAAAAAAAA=</HashCode>
+      <FileName>MoveLeft.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="GameFramework.MoveRight">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAQAAAAIAAAAAAIAAAACAAAAAAAAAA=</HashCode>
+      <FileName>MoveRight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="GameFramework.IMovement">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAQAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMovement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
