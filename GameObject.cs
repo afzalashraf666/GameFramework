@@ -1,12 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace GameFramework
@@ -15,7 +7,7 @@ namespace GameFramework
     {
         private int speed;
         PictureBox gameElement = new PictureBox();
-        IMovement direction;
+        public IMovement direction;
 
         public GameObject(PictureBox gameElement, int speed, IMovement direction)
         {
@@ -35,8 +27,7 @@ namespace GameFramework
 
         public void UpdatePosition()
         {
-            this.gameElement.Top = this.gameElement.Top + speed * (direction.TopDirection() / 3);
-            this.gameElement.Left = this.gameElement.Left + speed * (direction.LeftDirection() / 3);
+            this.direction.Move(this.gameElement, this.speed);
         }
     }
 }

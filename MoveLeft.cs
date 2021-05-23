@@ -1,29 +1,22 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Collections;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GameFramework
 {
     class MoveLeft : IMovement
     {
-        int Top = 0;
-        int Left = -3;
-
-        public IMovement Move()
+        public void Move(PictureBox picture, int speed)
         {
-            return new MoveLeft();
-        }
-
-        public int TopDirection()
-        {
-            return Top;
-        }
-
-        public int LeftDirection()
-        {
-            return Left;
+            picture.Left -= speed;
         }
     }
 }

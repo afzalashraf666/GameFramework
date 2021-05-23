@@ -35,6 +35,7 @@ namespace GameFramework
             this.picBox3 = new System.Windows.Forms.PictureBox();
             this.picBox4 = new System.Windows.Forms.PictureBox();
             this.picBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox4)).BeginInit();
@@ -44,8 +45,8 @@ namespace GameFramework
             // picBox
             // 
             this.picBox.BackColor = System.Drawing.Color.Transparent;
-            this.picBox.Image = global::GameFramework.Properties.Resources.robberrub;
-            this.picBox.Location = new System.Drawing.Point(637, 282);
+            this.picBox.Image = global::GameFramework.Properties.Resources.policestand;
+            this.picBox.Location = new System.Drawing.Point(23, 282);
             this.picBox.Name = "picBox";
             this.picBox.Size = new System.Drawing.Size(150, 150);
             this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -61,7 +62,7 @@ namespace GameFramework
             // 
             this.picBox3.BackColor = System.Drawing.Color.Transparent;
             this.picBox3.Image = global::GameFramework.Properties.Resources.robberrub;
-            this.picBox3.Location = new System.Drawing.Point(347, 282);
+            this.picBox3.Location = new System.Drawing.Point(622, 282);
             this.picBox3.Name = "picBox3";
             this.picBox3.Size = new System.Drawing.Size(150, 150);
             this.picBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -72,7 +73,7 @@ namespace GameFramework
             // 
             this.picBox4.BackColor = System.Drawing.Color.Transparent;
             this.picBox4.Image = global::GameFramework.Properties.Resources.robberrub;
-            this.picBox4.Location = new System.Drawing.Point(219, 282);
+            this.picBox4.Location = new System.Drawing.Point(573, 71);
             this.picBox4.Name = "picBox4";
             this.picBox4.Size = new System.Drawing.Size(150, 150);
             this.picBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -83,12 +84,21 @@ namespace GameFramework
             // 
             this.picBox2.BackColor = System.Drawing.Color.Transparent;
             this.picBox2.Image = global::GameFramework.Properties.Resources.robberrub;
-            this.picBox2.Location = new System.Drawing.Point(1, 282);
+            this.picBox2.Location = new System.Drawing.Point(279, 282);
             this.picBox2.Name = "picBox2";
             this.picBox2.Size = new System.Drawing.Size(150, 150);
             this.picBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBox2.TabIndex = 4;
             this.picBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(355, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
             // 
             // GameWindow
             // 
@@ -97,6 +107,7 @@ namespace GameFramework
             this.BackgroundImage = global::GameFramework.Properties.Resources.GameScene1__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.picBox2);
             this.Controls.Add(this.picBox4);
             this.Controls.Add(this.picBox3);
@@ -105,11 +116,14 @@ namespace GameFramework
             this.Name = "GameWindow";
             this.Text = "GameWindow";
             this.Load += new System.EventHandler(this.GameWindow_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameWindow_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GameWindow_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -119,6 +133,7 @@ namespace GameFramework
         private System.Windows.Forms.PictureBox picBox3;
         private System.Windows.Forms.PictureBox picBox4;
         private System.Windows.Forms.PictureBox picBox2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

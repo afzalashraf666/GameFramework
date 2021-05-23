@@ -55,7 +55,11 @@
       <DependentUpon>GameWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="IMovement.cs" />
+    <Compile Include="MMentKeys.cs" />
+    <Compile Include="MoveKeyBoard.cs" />
+    <Compile Include="Movement.cs" />
     <Compile Include="MoveLeft.cs" />
+    <Compile Include="MovementFactory.cs" />
     <Compile Include="MoveRight.cs" />
     <Compile Include="Patrol.cs" />
     <Compile Include="Program.cs" />

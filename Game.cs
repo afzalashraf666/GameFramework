@@ -36,7 +36,10 @@ namespace GameFramework
             for (int idx = 0; idx < objectsArrayList.Count; idx++)
             {
                 GameObject newObj = (GameObject)objectsArrayList[idx];
-                newObj.UpdatePosition();
+                if (newObj.direction != new MoveKeyBoard())
+                {
+                    newObj.UpdatePosition();
+                }
             }
         }
     }

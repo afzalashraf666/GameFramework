@@ -3,39 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace GameFramework
 {
     class Patrol : IMovement
     {
-        int Top;
-        int Left = 0;
-        static int patrol;
-        public IMovement Move()
+        public void Move(PictureBox picture, int speed)
         {
-            if (patrol / 2 == 0)
-            {
-                Left = -13;
-                patrol++;
-                return new MoveRight();
-            }
-
-            else
-            {
-                Left = 13;
-                patrol++;
-                return new MoveLeft();
-            }
-        }
-
-        public int TopDirection()
-        {
-            return Top;
-        }
-
-        public int LeftDirection()
-        {
-            return Left;
+            picture.Left -= speed;
         }
     }
 }
