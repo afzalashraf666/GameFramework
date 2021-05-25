@@ -15,6 +15,7 @@ namespace GameFramework
     public partial class GameWindow : Form
     {
         Game game = Game.getInstance();
+        GameFactory gameFactory = GameFactory.GetOneGameFactory();
         MoveKeyBoard keyBoardControl = new MoveKeyBoard();
         public GameWindow()
         {
@@ -24,19 +25,15 @@ namespace GameFramework
         private void GameWindow_Load(object sender, EventArgs e)
         {
             picBox4.Hide();
-            //Factory Object
-            MovementFactory obj = new MovementFactory();
 
             //Getting Keyboard Movement from factory
-            IMovement keyBoard = obj.getMovement(Movement.Keyboard);
-            GameObject newobj = new GameObject(picBox, 4, keyBoard);
+            GameObject newobj = gameFactory.CreateGameObject(picBox, 4, Movement.Keyboard, ObjectsType.player);
 
             //Getting Right Movement from factory
-            IMovement newRight = obj.getMovement(Movement.Right);
-            GameObject newobj2 = new GameObject(picBox2, 1, newRight);
+            GameObject newobj2 = gameFactory.CreateGameObject(picBox2, 1, Movement.Right, ObjectsType.enemy);
 
             //Default left movement,if movement not specified
-            GameObject newobj3 = new GameObject(picBox3, 3);
+            GameObject newobj3 = gameFactory.CreateGameObject(picBox3, 4, ObjectsType.enemy);
 
             game.addGameObject(newobj);
             game.addGameObject(newobj2);

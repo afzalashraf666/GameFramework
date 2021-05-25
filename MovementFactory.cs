@@ -8,6 +8,21 @@ namespace GameFramework
 {
     class MovementFactory
     {
+        private static MovementFactory MovementFactoryManager = null;
+        private MovementFactory()
+        {
+
+        }
+
+        public static MovementFactory GetOneMovementFactory()
+        {
+            if (MovementFactoryManager == null)
+            {
+                MovementFactoryManager = new MovementFactory();
+            }
+            return MovementFactoryManager;
+        }
+
         public IMovement getMovement(Movement MovementType)
         {
             if (MovementType == Movement.Left)

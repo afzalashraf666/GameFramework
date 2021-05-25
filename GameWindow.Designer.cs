@@ -108,10 +108,11 @@ namespace GameFramework
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.picBox2);
             this.Controls.Add(this.picBox4);
-            this.Controls.Add(this.picBox3);
             this.Controls.Add(this.picBox);
+            this.Controls.Add(this.picBox2);
+            this.Controls.Add(this.picBox3);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "GameWindow";
             this.Text = "GameWindow";
