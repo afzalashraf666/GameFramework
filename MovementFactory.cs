@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    class MovementFactory
+    public class MovementFactory
     {
         private static MovementFactory MovementFactoryManager = null;
         private MovementFactory()

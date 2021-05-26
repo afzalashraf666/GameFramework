@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    enum ObjectsType
+    public enum ObjectsType
     {
         player,
         enemy,

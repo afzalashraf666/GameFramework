@@ -2,7 +2,7 @@
 
 namespace GameFramework
 {
-    interface IMovement
+    public interface IMovement
     {
         void Move(PictureBox picture, int speed);
     }

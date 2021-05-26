@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 namespace GameFramework
 {
-    class MoveRight : IMovement
+    public class MoveRight : IMovement
     {
         public void Move(PictureBox picture, int speed)
         {

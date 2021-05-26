@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    enum Movement
+    public enum Movement
     {
         Left,
         Right,

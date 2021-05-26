@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    enum MMentKeys
+    public enum MMentKeys
     {
         Left,
         Right,

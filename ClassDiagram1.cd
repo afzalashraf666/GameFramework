@@ -52,13 +52,6 @@
       <FileName>GameFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GameFramework.GameWindow" Collapsed="true">
-    <Position X="6" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AHAAAAEAkCAAABAAAACAAAACAAAAQACIAAAgAAAAAEQ=</HashCode>
-      <FileName>GameWindow.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Interface Name="GameFramework.IMovement">
     <Position X="50.5" Y="22.25" Width="1.5" />
     <TypeIdentifier>

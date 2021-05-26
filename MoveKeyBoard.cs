@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace GameFramework
 {
-    class MoveKeyBoard : IMovement
+    public class MoveKeyBoard : IMovement
     {
         static bool moveLeft, moveRight;
         public void Move(PictureBox picture, int speed)

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace GameFramework
 {
-    class Patrol : IMovement
+    public class Patrol : IMovement
     {
         public void Move(PictureBox picture, int speed)
         {

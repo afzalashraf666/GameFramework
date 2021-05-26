@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GameFramework
 {
-    class Game
+    public class Game
     {
         private static Game gameManager;
         private Game()
@@ -26,6 +26,7 @@ namespace GameFramework
         }
 
         private ArrayList objectsArrayList = new ArrayList();
+
         public void addGameObject(GameObject newObj)
         {
             objectsArrayList.Add(newObj);

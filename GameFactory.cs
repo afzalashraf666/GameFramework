@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace GameFramework
 {
-    class GameFactory
+    public class GameFactory
     {
         private static GameFactory GameFactoryManager = null;
         MovementFactory MovemenetObj = MovementFactory.GetOneMovementFactory();
