@@ -10,7 +10,14 @@ namespace GameFramework
 {
     public class MoveKeyBoard : IMovement
     {
+        private Movement movementEnum = Movement.Left;
         static bool moveLeft, moveRight;
+
+        public Movement getMovementEnum()
+        {
+            return movementEnum;
+        }
+
         public void Move(PictureBox picture, int speed)
         {
             if (moveLeft)

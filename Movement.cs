@@ -8,6 +8,8 @@ namespace GameFramework
 {
     public enum Movement
     {
+        Up,
+        Down,
         Left,
         Right,
         Keyboard,

@@ -12,7 +12,8 @@ namespace GameFramework
     public class GameFactory
     {
         private static GameFactory GameFactoryManager = null;
-        MovementFactory MovemenetObj = MovementFactory.GetOneMovementFactory();
+        //MovementFactory MovemenetObj = MovementFactory.GetOneMovementFactory();
+        MovementPool MovementObj = MovementPool.getOnePool();
         static ArrayList GameObjectsCounter = new ArrayList();
 
         private GameFactory()
@@ -31,7 +32,7 @@ namespace GameFramework
 
         public GameObject CreateGameObject(PictureBox picElement, int speed, Movement movementType, ObjectsType type)
         {
-            IMovement movementObject = MovemenetObj.getMovement(movementType);
+            IMovement movementObject = MovementObj.Acquire(movementType);
             GameObject GameObj = new GameObject(picElement, speed, movementObject, type);
             GameObjectsCounter.Add(type);
             return GameObj;

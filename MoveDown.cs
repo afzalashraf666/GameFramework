@@ -1,10 +1,9 @@
 ﻿using System.Windows.Forms;
 namespace GameFramework
 {
-    public class MoveRight : IMovement
+    public class MoveDown : IMovement
     {
-
-        private Movement movementEnum = Movement.Right;
+        private Movement movementEnum = Movement.Down;
         public Movement getMovementEnum()
         {
             return movementEnum;
@@ -12,7 +11,7 @@ namespace GameFramework
 
         public void Move(PictureBox picture, int speed)
         {
-            picture.Left += speed;
+            picture.Top += speed;
         }
     }
 }

@@ -22,11 +22,12 @@
     </TypeIdentifier>
     <Lollipop Position="0.1" />
   </Class>
-  <Class Name="GameFramework.MoveRight">
+  <Class Name="GameFramework.MoveUp">
     <Position X="21.5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MoveRight.cs</FileName>
+      <FileName>MoveUp.cs</FileName>
+      <NewMemberFileName>MoveRight.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>

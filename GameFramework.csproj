@@ -58,6 +58,9 @@
     <Compile Include="Movement.cs" />
     <Compile Include="MoveLeft.cs" />
     <Compile Include="MovementFactory.cs" />
+    <Compile Include="MoveDown.cs" />
+    <Compile Include="MovementPool.cs" />
+    <Compile Include="MoveUp.cs" />
     <Compile Include="MoveRight.cs" />
     <Compile Include="ObjectsType.cs" />
     <Compile Include="Patrol.cs" />
