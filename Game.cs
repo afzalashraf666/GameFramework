@@ -26,10 +26,16 @@ namespace GameFramework
         }
 
         private ArrayList objectsArrayList = new ArrayList();
+        private CollisionDetection collision;
 
         public void addGameObject(GameObject newObj)
         {
             objectsArrayList.Add(newObj);
+        }
+
+        public void addCollision(CollisionDetection collision)
+        {
+            this.collision = collision;
         }
 
         public void Update()
@@ -37,10 +43,9 @@ namespace GameFramework
             for (int idx = 0; idx < objectsArrayList.Count; idx++)
             {
                 GameObject newObj = (GameObject)objectsArrayList[idx];
-                if (newObj.direction != new MoveKeyBoard())
-                {
-                    newObj.UpdatePosition();
-                }
+                newObj.UpdatePosition();
+                collision.checkCollision();
+
             }
         }
     }

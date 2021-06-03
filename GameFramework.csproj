@@ -49,9 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CollisionDetection.cs" />
+    <Compile Include="DecreaseHealth.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameFactory.cs" />
     <Compile Include="GameObject.cs" />
+    <Compile Include="ICollisionReaction.cs" />
     <Compile Include="IMovement.cs" />
     <Compile Include="MMentKeys.cs" />
     <Compile Include="MoveKeyBoard.cs" />

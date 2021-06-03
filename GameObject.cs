@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace GameFramework
@@ -28,9 +29,26 @@ namespace GameFramework
             this.type = type;
         }
 
+        public void Disappear()
+        {
+            this.gameElement.Hide();
+            GC.Collect(GC.GetGeneration(this));
+        }
+
+        public PictureBox getPicture()
+        {
+            return gameElement;
+        }
+
         public void UpdatePosition()
         {
             this.direction.Move(this.gameElement, this.speed);
+        }
+
+        ~GameObject()
+        {
+            MovementPool PollObj = MovementPool.getOnePool();
+            PollObj.Release(this.direction);
         }
     }
 }

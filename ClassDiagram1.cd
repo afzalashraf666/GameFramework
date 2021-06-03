@@ -1,46 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="GameFramework.Game">
-    <Position X="1.25" Y="1.25" Width="2" />
+    <Position X="25.25" Y="12.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AEQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAIAAAAAQAA=</HashCode>
+      <HashCode>AEQAgAAAAAAAAAAAAABAAAAAAAAAAAQAAAIAAAAAQAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework.GameObject">
-    <Position X="49.5" Y="18.25" Width="2.25" />
+    <Position X="32" Y="13.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAICAQAAAAAAAAAAABAQAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAQAAAICAQAAAAAAAAAAABAQAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObject.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework.MoveLeft">
-    <Position X="50.5" Y="24.25" Width="1.5" />
+    <Position X="33" Y="19.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAgAAAIAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MoveLeft.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.1" />
   </Class>
   <Class Name="GameFramework.MoveUp">
-    <Position X="21.5" Y="9.75" Width="1.5" />
+    <Position X="21.25" Y="9.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAgAAAIAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MoveUp.cs</FileName>
       <NewMemberFileName>MoveRight.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="GameFramework.MoveKeyBoard">
-    <Position X="52.25" Y="24.25" Width="1.5" />
+    <Position X="34.75" Y="19.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAgAAAAAgAAAAAAAAAAAAAAAAACEAAAAA=</HashCode>
+      <HashCode>AAAAAgAAAIAAgCAAAAgAAAAAAAAAAAAAAAAACEAAAAA=</HashCode>
       <FileName>MoveKeyBoard.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="GameFramework.MovementFactory">
-    <Position X="1.75" Y="5.5" Width="1.5" />
+    <Position X="25.75" Y="16.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABACAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>MovementFactory.cs</FileName>
@@ -49,28 +49,50 @@
   <Class Name="GameFramework.GameFactory">
     <Position X="17.25" Y="12.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAQAAAAAAAAAAAAAEAAAAgAABAAAAAgAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAgAABAAAAAgAAAAAAAAAEA=</HashCode>
       <FileName>GameFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="GameFramework.IMovement">
-    <Position X="50.5" Y="22.25" Width="1.5" />
+  <Class Name="GameFramework.DecreaseHealth">
+    <Position X="17.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DecreaseHealth.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameFramework.CollisionDetection">
+    <Position X="14" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABgAgAAAAAABAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CollisionDetection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GameFramework.IMovement">
+    <Position X="33" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IMovement.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="GameFramework.ICollisionReaction">
+    <Position X="17.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICollisionReaction.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Enum Name="GameFramework.MMentKeys">
-    <Position X="54" Y="18.75" Width="1.5" />
+    <Position X="36.5" Y="14.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
       <FileName>MMentKeys.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="GameFramework.Movement">
-    <Position X="52.25" Y="18.75" Width="1.5" />
+    <Position X="34.75" Y="14.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAQAAAAAA=</HashCode>
+      <HashCode>AAgAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAQAAAAAI=</HashCode>
       <FileName>Movement.cs</FileName>
     </TypeIdentifier>
   </Enum>
